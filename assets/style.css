@@ -1,0 +1,90 @@
+:root{
+    --green: #0f0;
+    --black: #000;
+    --almost-black: #101010;
+}
+
+body{
+    color: var(--green);
+    background-color: var(--black);
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.ascii{
+display: flex;
+justify-content: center; 
+align-items: center; 
+overflow: hidden; 
+font-family: monospace;
+font-size: 12px;
+line-height: 1; 
+white-space: pre;
+margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.end{
+    border-top: 1px solid var(--green);
+    padding-top: 20px
+}
+
+/*Game*/
+
+#board {
+    margin-left: auto;
+    margin-right: auto;
+    width: 370px;
+    height: 370px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    background-color: var(--green);
+}
+
+.square {
+    width: 120px;
+    height: 120px;
+    background-color: var(--black);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square:hover {
+    background-color: var(--almost-black);
+}
+
+.button-div{
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+#restartButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 150px;
+    color: var(--green);
+    background-color: var(--black);
+    border: 1px solid var(--green);
+    font-size: 18px;
+}
+
+#restartButton:hover {
+    background-color: var(--almost-black);
+    color: var(--green);
+}
