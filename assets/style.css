@@ -9,7 +9,7 @@ body{
     background-color: var(--black);
 }
 
-h1{
+h1, h2, h3{
     text-align: center;
 }
 
@@ -19,15 +19,15 @@ p{
 }
 
 .ascii{
-display: flex;
-justify-content: center; 
-align-items: center; 
-overflow: hidden; 
-font-family: monospace;
-font-size: 12px;
-line-height: 1; 
-white-space: pre;
-margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; 
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 1; 
+    white-space: pre;
+    margin: 0;
 }
 
 a{
@@ -36,55 +36,6 @@ a{
 }
 
 .end{
-    border-top: 1px solid var(--green);
+    /*border-top: 1px solid var(--green);*/
     padding-top: 20px
-}
-
-/*Game*/
-
-#board {
-    margin-left: auto;
-    margin-right: auto;
-    width: 370px;
-    height: 370px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
-    background-color: var(--green);
-}
-
-.square {
-    width: 120px;
-    height: 120px;
-    background-color: var(--black);
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.square:hover {
-    background-color: var(--almost-black);
-}
-
-.button-div{
-    padding-top: 15px;
-    padding-bottom: 25px;
-}
-
-#restartButton {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 40px;
-    width: 150px;
-    color: var(--green);
-    background-color: var(--black);
-    border: 1px solid var(--green);
-    font-size: 18px;
-}
-
-#restartButton:hover {
-    background-color: var(--almost-black);
-    color: var(--green);
 }
